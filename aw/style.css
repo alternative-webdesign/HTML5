@@ -1,0 +1,59 @@
+header, nav, footer, figure, section, article, figcaption, aside {display: block;}
+html{background-color:#fff;font-size:100%;}
+body {margin: 0 auto;color:#000;font-family:Trebuchet MS,Arial,Sans-Serif;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-smoothing: antialiased;}
+*{margin: 0;padding: 0;}  
+p{font-family:Trebuchet MS,Arial,Sans-Serif;}
+@font-face {font-family: 'police-h1';src: url('http://www.alternative-webdesign.fr/ressources/exito-webfont.eot?') format('eot'),url('http://www.alternative-webdesign.fr/ressources/exito-webfont.woff') format('woff'),url('http://www.alternative-webdesign.fr/ressources/exito-webfont.ttf') format('truetype'),url('http://www.alternative-webdesign.fr/ressources/exito-webfont.svg#webfontNyVDRJjQ') format('svg');}
+a{color:#000;text-decoration:none;outline:none;}
+a:hover{color:#0099FF;}
+a img {border: none;}
+h1{color:#fff;font:bold 3em 'Arial';}
+.ombre{-moz-box-shadow: 0 0 10px #888;-webkit-box-shadow: 0 0 10px #888;box-shadow: 0 0 10px #888;filter:progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=160, Strength=12);zoom: 1;}
+.animer a{-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;-o-transition: all .3s ease-in;transition: all .3s ease-in;}
+.animer_cote a{-webkit-transition: all .9s ease-in;-moz-transition: all .9s ease-in;-o-transition: all .9s ease-in;transition: all .9s ease-in;}
+.color{color:#C9276D;}
+
+
+#content{display: table;margin:0 auto;}
+/* ----------------------------- */
+/*               MENU                  */
+/* ----------------------------- */
+
+.menu{width:200px;line-height:30px;padding:40px 40px 0 0;display: table-cell;}
+	.menu ul{width:180px;text-align:right;}
+		.menu a{text-decoration: none}
+			.menu li{list-style-type: none;line-height:25px;font-size:0.9em;}
+			.menu li a{display: inline-block;}
+			.menu li a:hover{text-decoration:underline;}
+				.menu div{border-bottom:1px dotted black;text-align:right}
+.ascenseur{cursor:pointer;}
+
+
+
+.cadre{background-color:#FFF;min-height:600px;width:550px;z-index:1;display: table-cell;position:relative;}
+
+#text_central p{padding:30px 20px 10px;text-align:justify;}
+	
+.txt_cote a{color:#fff;font:bold 6em 'Arial';letter-spacing:-15px;text-shadow:0 0 12px #555;cursor:default;margin:93px 0 0 465px;position:absolute;z-index:2;-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-moz-transform-origin: 20px 0px;filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+	.txt_cote a:hover{color:#0099FF;}
+
+#cadre_2{width:100%;background-color:#DDD;text-align:justify;z-index:4;position:relative}
+	#cadre_2 p{width:510px;margin:0 auto;}
+
+.aw{position:absolute;margin:-45px 0 0 -50px;z-index:3}
+	.aw a{color:#DDD;font:bold 3em 'Arial';letter-spacing:-5px;text-shadow:0 0 12px #555;cursor:default}
+		.aw a:hover{color:#0099FF;}
+		
+#bulles{width:550px;margin:40px auto 0;}		
+	#bulle_orange{display:block;width: 80px;height:80px;background-color: #FCAC17;border-radius: 50px;-moz-border-radius: 50px;-webkit-border-radius: 50px;}		
+		#bulle_orange a{font:bold 1.2em 'Arial';}		
+		#bulle_orange a:hover{ width: 200px;height:200px;background-color: #FCE2B1;border-radius: 50px;-moz-border-radius: 50px;-webkit-border-radius: 50px;}		
+	
+		
+.contact{position:absolute;width:300px;margin:-99px 0 0 810px;z-index:5;}
+	.contact a#txt_contact{font:bold 2em 'Arial';letter-spacing:-3px;text-shadow:0 0 7px #555;cursor:default;}
+		.contact ul{list-style-type:none;}
+
+
+/* FOOTER */
+#footer{width:1050px;position:absolute;bottom:0;left:0;clear:both;color:#FDFDFD;border-top:solid 1px #000;background-color:#787889;margin:0 auto;}
