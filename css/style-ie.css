@@ -1,0 +1,18 @@
+div#wraper {
+  height: 1330px;}
+ 
+div#content {
+  height: 817px;}
+  
+header {
+  overflow: auto;
+  zoom:1;
+  padding-bottom: 20px;}
+  
+h1 { 
+  display: inline;
+  zoom: 1;} 
+  
+#content section.presentation h2, #content section.contact h2 {
+  display: inline;
+  zoom:1;}
