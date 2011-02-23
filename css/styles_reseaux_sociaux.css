@@ -1,0 +1,23 @@
+aside#reseaux_sociaux {
+  float: right !important;
+  margin-right:150px;}
+	
+.conteneur a{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 50px;}
+	
+.expansion a{
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;}
+	
+.expansion img {
+	width: 100%; }
+	
+.expansion span {
+  color:#FFF;
+  display: none; 
+  text-align: center;
+  padding-left: 20px;}

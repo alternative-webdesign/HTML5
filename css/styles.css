@@ -1,67 +1,51 @@
 /* ----------------------------- */
 /*              RESET              */
 /* ----------------------------- */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section { 
-    display:block;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
 
 
 /* ----------------------------- */
 /*     Styles de base         */
-/* ----------------------------- */
+/* ---------------------------- */
 
-
-@font-face {
-	font-family: 'HittheRoad';
-	src: url('fonts/HITROAD.eot');
-	src: local('☺'), url('fonts/HITROAD.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;}
+@font-face {}
 
 
 /* Page */ 
+
 html { 
   font-size: 100%;}
   
-body { 
+body {
+  background-image:url(../images/bg.png);
+  background-repeat:repeat-x; 
   margin: 0; 
   padding: 0; 
-  font-family: "Century Gothic", "Lucida Grande", "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
+  font-family:  "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
   font-size: 0.8em;
   line-height: 1.4;
-  color: black;}
+  background-color:#202021;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;}
 
   /* Liens */ 
-a { 
-  text-decoration: none; } 
-  
-a:link { 
-  color: #000; } 
-  
-a:visited { 
-  color: #222; } 
-  
-a:hover, a:focus, a:active { 
-  text-decoration: underline;} 
+a {color:white; text-decoration: none;} 
+a:link {color: white;} 
+a:hover, a:focus, a:active {text-decoration: underline;} 
+a:focus, a:active {outline: none;} 
 
-a:focus, a:active { 
-  outline: none; } 
+
+  /* Titres */
   
-  
-  /* Titres */ 
 h1 { 
   display: inline-block;
-  margin-top: 0;
-  font-family: "HittheRoad", "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
   font-weight: normal;
-  font-size: 3em; 
-  line-height: 0.8;
-  padding-bottom:40px;
-  color: white;
-  text-shadow: 0px 0px 5px #fff; } 
+  color: white;}
   
 h1 a, h1 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -71,47 +55,74 @@ h1 a, h1 a:visited {
 h1 a:hover, h1 a:focus {
   text-decoration: none;
   outline: none;
-  text-shadow: 0px 0px 20px #555; }
+  text-shadow: 0px 0px 20px #444;}
 
-h2 { 
-  font-size: 1.5em; } 
+h2 {font-size: 1.5em;} 
  
 
   /* Paragraphes */ 
-p { 
-  margin: .75em 0;} 
+p {margin: .75em 0;} 
  
 
   /* Divers Elements de type en-ligne */ 
-strong { 
-  font-weight: bold; } 
+strong {font-weight: bold;}
+.espace{ letter-spacing: 4px;}
+
   
-.float{float: left}
-  
- /* ----------------------------- */
-/*            Blocs                  */
+/* ------------------------------ */
+/*             Blocs                 */
 /* ----------------------------- */
 
-  
-/* Header */ 
-header {
-  position: relative;
-  border-bottom: 1px solid #000;}
+.ombre{
+  -webkit-box-shadow:0 0px 40px -10px #000;
+  -moz-box-shadow:0 0px 40px -10px #000;
+  box-shadow:0 0px 40px -10px #000;}
 
+.animer{ 
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;}
+
+.animer a:hover{color:#669900} 
+
+figure{display: inline-block; vertical-align: top;}
+
+
+/* Banniere */
+
+section.banniere{
+  max-height:40px;}
+
+section.banniere h1{
+  cursor:default;
+  letter-spacing:4px;
+  padding-left:12%; 
+  font-size:1em;}
+  
+
+/* Header */ 
+
+header{position: relative;}
+
+header h1{
+  margin-top:100px;
+  font-size:2.5em;
+  text-shadow: 0px 0px 5px white;}
+  
 header nav {
   position: absolute;
   right: 0;
-  bottom: 15px;
-  font: 1.6em "HittheRoad", "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;}
+  bottom: 80px;
+  font-size: 1.6em;}
   
 header nav li {
-	display: inline;}
+  display: inline;}
   
 header nav a {
   position: relative;
-  color: black;
-  text-decoration: none;
-  padding: 6px 10px;
+  font-size:0.8em;
+  padding: 5px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -119,46 +130,35 @@ header nav a {
 
 header nav a:hover, header nav a:focus {
   text-decoration: none;
-  background-color: rgba(0,0,0,0.1);
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;}
+  color:rgba(102,153,0,0.6);
+  text-shadow:0px 0px 5px #111;
+  border-bottom:25px dashed rgba(102,153,0,0.6);}
+ 
+#bandeau{
+  border:1px solid #777; 
+  position:relative;
+  margin-left:60px;}
   
-
-/* Content */ 
-
+  
+  /* Content */ 
+  
 #content {
-  width: 1000px; 
-  height: 817px;
-  margin: 0 auto;
-  padding-top: 20px;}
+  width:1000px;
+  margin: 0 auto;}
   
-  #content p#presentation {
+#content p#presentation {
   clear: both;
   font-size: 1.2em;}
   
-section{
-	color:white;
-	padding:20px;
-	float:left;
-	height:500px;
-	width:200px;
-	background-color:#555;
-	margin-bottom:50px;
-	-webkit-box-shadow:0 0px 40px -10px #AAA;
-	-moz-box-shadow:0 0px 40px -10px #AAA;
-	box-shadow:0 0px 40px -10px #AAA;}
   
   
   
-  
-  /* ----------------------------- */
-/*  =     Web mobile             */
-/* ----------------------------- */
+/* -------------------------------- */
+/*         Web mobile             */
+/* ------------------------------- */
 
 @media only screen and (max-device-width:480px) {
     html {-webkit-text-size-adjust: 150% !important;}
-    #wrapper { background: black !important; }
     body {font-size:1.2em !important;}
     h1 span {color:#fff!important;}
     header nav {position:static!important; font-size:2em!important;}
