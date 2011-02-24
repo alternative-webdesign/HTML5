@@ -188,22 +188,21 @@ section.competences h1{
 
 .cadre_competences ul{list-style-type:none;}  
   
-#up{
-	position:relative;
-	height:300px;
+#up{border:1px solid red; 
+
+	height:240px;
 	margin-top:30px;}
 
 .conteneur{
-	height:300px;
+width:600px;
   position: absolute;}
   
-a.expansion {
-	height:300px;
+a.expansion { 
   display: block;
   position: absolute;
   font:1.1em Arial, Helvetica, sans-serif;}
 	
-.expansion span{display:inline-block; border:1px solid red; }
+.expansion span{display:inline-block; position:aborder;border:1px solid red; }
 
 .expansion img {
   width: 100%;}
