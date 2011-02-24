@@ -1,23 +1,25 @@
-aside#reseaux_sociaux {
-  float: right !important;
-  margin-right:150px;}
-	
-.conteneur a{
-  display: inline-block;
-  vertical-align: bottom;
-  width: 50px;}
-	
-.expansion a{
-	display: block;
+aside.social{width:30%;display:inline-block;float: right}
+
+.reseaux_sociaux{
+	position: relative;}
+
+.conteneur {
 	position: absolute;
+	padding-left: 20px
+}
+
+a.expansion {
+	display: block;
+	width: 40px;
+	position: absolute;
+	text-align: center;
 	text-decoration: none;
 	font: bold 12px Arial, Helvetica, sans-serif;}
 	
 .expansion img {
-	width: 100%; }
-	
+	width: 100%; 
+}
 .expansion span {
-  color:#FFF;
-  display: none; 
-  text-align: center;
-  padding-left: 20px;}
+	display: none; 
+	padding-left: 20px;
+	color:#FFF;}

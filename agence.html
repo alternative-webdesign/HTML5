@@ -35,9 +35,13 @@
 
 	<section class="banniere ombre animer">
 		<h1><a>Agence Web | Création site web</a></h1>
-			<aside class="reseaux_sociaux">
-				<a href="#"><img src="images/icon-twitter.png" alt="Alternative-Webdesign agence web sur Twitter" /><span>Twitter</span></a>
-				<a href="#"><img src="images/icon-facebook.png" alt="Alternative-Webdesign agence web sur Facebook" /><span>Facebook</span></a>
+			<aside class="social">
+				<div  id="reseaux_sociaux" class="reseaux_sociaux">
+					<div class="conteneur">
+						<a class="expansion" href="#"><img src="images/icon-twitter.png" alt="Alternative-Webdesign agence web sur Twitter" /><span>Twitter</span></a>
+						<a class="expansion" href="#"><img src="images/icon-facebook.png" alt="Alternative-Webdesign agence web sur Facebook" /><span>Facebook</span></a>
+					</div>
+				</div>
 			</aside>
 	</section>
 			
@@ -48,31 +52,34 @@
 				<h1><img src="images/feuille.png" alt="alternative-webdesign agence web" width="60" /><a href="index.html">Alternative-Webdesign</a></h1>
 				<nav role="navigation">
 					<ul>
-						<li><a href="#">Accueil</a></li>
-						<li><a href="agence.html">L'agence</a></li>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="#">L'agence</a></li>
 						<li><a href="#">Réalisations</a></li>
 						<li><a href="#">Les Packs</a></li>
 						<li><a href="#">Devis gratuit</a></li>
 						<li><a href="#">Contact</a></li>
-				<!--	<li><a href="#">Le Blog</a></li>-->
+				<!--		<li><a href="#">Le Blog</a></li>-->
 					</ul>
 				</nav>
 			</header>
 		</section>
 	
 		<section class="middle">
-			<h1>Nos compétences</h1>
+			<h1>L'agence en quelques mots</h1>
+				<div>
+						<p>
+							Née en 2010, de la passion jumelée de 2 associés, <span class="color"><strong>Alternative-Webdesign</strong></span> est une jeune agence web dynamique et structurée.
+							Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois esthétiques, fidèles,fiables et conformes aux stantards du web (W3C).<br/>
+							Parce que '<u>votre reussite est la notre</u>', nous serons toujours là à vos cotés afin de vous conseillez et vous accompagnez tout au long de vos projets WEB.<br/>
+							Nos domaines de compétences s'etendent aussi bien sur l'identité visuelle, web design, que le développement de site e-commerce, site vitrine, site sur-mesure,etc...<br/>
+							Notre équipe répondra présente non via <s>une bonne cafetiere de café ou d'une bonne siéte</s> mais grace à sa créativité, sa qualification et son enthousiame a concevoir vos projets.
+						</p>
+				</div>
 				
-				<nav>
-					<div id="up">
-						<div class="conteneur">
-							<a class="expansion" href="#"><img src="images/cadre.jpg" alt="Compétences" width="220"/></a>
-							<a class="expansion" href="#"><img src="images/cadre.jpg" alt="Compétences" width="220"/></a>
-							<a class="expansion" href="#"><img src="images/cadre.jpg" alt="Compétences" width="220"/></a>
-							<a class="expansion" href="#"><img src="images/cadre.jpg" alt="Compétences" width="220"/></a>
-						</div>
-					</div>
-				</nav>
+				<aside class="gallerie">
+					<img src="images/gallerie_bg.png" alt="Compétences" width=""/>
+				</aside>
+				
 		</section>
 			
 			
@@ -88,13 +95,13 @@
 	<script type="text/javascript"> 
 		$(document).ready(
 		function()
-		{ $('#up').Fisheye( {
-		maxWidth: 90,
+		{ $('#reseaux_sociaux').Fisheye( {
+		maxWidth: 60,
 		items: 'a',
 		itemsText: 'span',
 		container: '.conteneur',
-		itemWidth: 240,
-		proximity: 100,
+		itemWidth: 40,
+		proximity: 20,
 		halign : 'center'
 		} ) } );
 	</script> 
