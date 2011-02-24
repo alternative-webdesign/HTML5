@@ -144,9 +144,13 @@ section.banniere h1{
   
 aside.reseaux_sociaux{display:inline-block;float: right !important;margin-right:100px;}
 aside.reseaux_sociaux span{display:none;}
-aside.reseaux_sociaux:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
+.twitter:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
+.facebook:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
 aside.reseaux_sociaux:hover a{color:#FFF;text-decoration:none;}
 aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
+  
+
+
   
 .reseaux_sociaux img {
   width:45px;
