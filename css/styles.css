@@ -189,14 +189,17 @@ section.competences h1{
 .cadre_competences ul{list-style-type:none;}  
   
 #up{
-  margin-top:30px;}
+	position:relative;
+	height:300px;
+	margin-top:30px;}
 
 .conteneur{
-
+	height:300px;
   position: absolute;}
   
 a.expansion {
-  display: inline-block;
+	height:300px;
+  display: block;
   position: absolute;
   font:1.1em Arial, Helvetica, sans-serif;}
 	
