@@ -35,7 +35,7 @@
 	<![endif]--> 
 
 	<section class="banniere ombre animer">
-		<h1><a>Agence Web | Création site web</a></h1>
+		<h1><a>Création site web Charente et France</a></h1>
 			<aside class="reseaux_sociaux">
 				<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Alternative-Webdesign agence web sur Twitter" /><span>Twitter</span></a>
 				<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Alternative-Webdesign agence web sur Facebook" /><span>Facebook</span></a>
@@ -61,22 +61,36 @@
 			</header>
 		</section>
 	
-		<section class="competences">
-			<h1>Nos compétences</h1>
-				<div id="up">
+		<section class="slideshow">
+			<h1>Agence web</h1>
+				<q>Entre rêve et réalité, il n'y a qu'un pas à faire, nous nous tenons à vos côté pour vous y aidez</q>
+				<div id="up" class="up">
 					<div class="conteneur">
 						<nav class="cadre_competences">
 							<ul>
-								<li><a class="expansion" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="images/cadre.jpg" alt="Compétences" width="220"/></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" width="220"/></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" width="220"/></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" width="220"/></a></li>
+								<li><a class="expansion" href="#"><span>Site vitrine. <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><img src="images/cadre.jpg" alt="Site vitrine" /></a></li>
+								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
+								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
+								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 		</section>
-			
+
+		<section class="presentation">
+			<div id="fin_trait">
+				<p>Quelques mots sur l'agence</p>
+			</div>
+			<div style="width:800px">
+				<p>
+					Née en 2010, de la passion jumelée de 2 associés, Alternative-Webdesign est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois esthétiques, fidèles,fiables et conformes aux stantards du web (W3C).
+					Parce que 'votre reussite est la notre', nous serons toujours là à vos cotés afin de vous conseillez et vous accompagnez tout au long de vos projets WEB.
+					Nos domaines de compétences s'etendent aussi bien sur l'identité visuelle, web design, que le développement de site e-commerce, site vitrine, site sur-mesure,etc...
+					Notre équipe répondra présente non via une bonne cafetiere de café ou d'une bonne siéte mais grace à sa créativité, sa qualification et son enthousiame a concevoir vos projets.
+				</p>
+			</div>
+		</section>
 			
 		
 	</div><!-- Fin content -->
@@ -89,15 +103,17 @@
 	<script type="text/javascript" src="scripts/interface.js"></script> 
 	<script type="text/javascript"> 
 		$(document).ready(
-		function()
-		{ $('#up').Fisheye( {
-		maxWidth: 90,
-		items: 'a',
-		container: '.conteneur',
-		itemWidth: 220,
-		proximity: 80,
-		halign : 'center'
-		} ) } );
+				function()
+				{
+					$('#up').Fisheye(
+						{
+							maxWidth: 50,
+							items: 'a',
+							container: '.conteneur',
+							itemWidth: 200,
+							proximity: 90,
+							halign : 'center'
+						})});
 	</script> 
 	</body>
 </html>

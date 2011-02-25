@@ -41,11 +41,9 @@ a img {border: none;}
 /* ----------------------------- */
 h1 { 
   display: inline-block;
-  font-weight: normal;
-  color: white;}
+  font-weight: normal;}
   
 h1 a, h1 a:visited {
-  color: white;
   text-decoration: none;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -72,7 +70,7 @@ p {margin: .75em 0;}
 figure{display: inline-block; vertical-align: top;}
 strong {font-weight: bold;}
 .espace{ letter-spacing: 4px;}
-
+  
   
 /* ------------------------------ */
 /*             BLOCS               */
@@ -101,7 +99,7 @@ header img{
   margin:10px 0 0 315px}
 
 header h1{
-  margin-top:100px;
+  margin-top:80px;
   font-size:2.5em;
   text-shadow: 0px 0px 5px white;}
   
@@ -111,8 +109,7 @@ header nav {
   bottom: 80px;
   font-size: 1.6em;}
   
-header nav li {
-  display: inline;}
+header nav li {display: inline;}
   
 header nav a {
   position: relative;
@@ -138,7 +135,7 @@ section.banniere{
 
 section.banniere h1{
   font-size:1em;
-  letter-spacing:4px;
+  letter-spacing:2px;
   margin:15px 0 0 12%;
   cursor:default;}
   
@@ -148,9 +145,6 @@ aside.reseaux_sociaux span{display:none;}
 .facebook:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
 aside.reseaux_sociaux:hover a{color:#FFF;text-decoration:none;}
 aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
-  
-
-
   
 .reseaux_sociaux img {
   width:45px;
@@ -169,45 +163,64 @@ aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
 /*          CONTENT            */
 /* ----------------------------- */
 #content {
-  position:relative;
   width:1000px;
   margin: 0 auto;}
 
   
 /* ------------------------------ */
-/*      COMPETENCES       */
+/*           SLIDESHOW       */
 /* ----------------------------- */
-section.competences{
+section.slideshow{
   position:relative; 
-  border-top:1px solid #777;
-  margin-top:-10px;}
+  border-top:1px solid #999;
+  margin:-10px 0 65px;}
   
-section.competences h1{
+section.slideshow h1{
   font: 3em "police-h1";
   letter-spacing:7px;}
 
-.cadre_competences ul{list-style-type:none;}  
+nav.cadre_competences ul{list-style-type:none;}
   
-#up{border:1px solid red; 
-
-	height:240px;
-	margin-top:30px;}
+.up{
+	position:relative;
+	height:200px;
+	margin-top:20px;}
 
 .conteneur{
-width:600px;
-  position: absolute;}
+	height: 220px;
+	position: absolute;}
   
 a.expansion { 
-  display: block;
-  position: absolute;
-  font:1.1em Arial, Helvetica, sans-serif;}
+	position: absolute;
+	display: block;}
 	
-.expansion span{display:inline-block; position:aborder;border:1px solid red; }
-
 .expansion img {
   width: 100%;}
+  
+a.expansion span {
+position:absolute;
+  display:inline;
+text-align:justify;
+top:10px;
+left:10px;
+  font:normal 1em;}
+  
+  
+/* ------------------------------ */
+/*       PRESENTATION     */
+/* ----------------------------- */ 
+section.presentation{width:1000px;}  
+ 
+#fin_trait {
+  width:842px;
+  border-top:1px solid #999;}  
 
-
+#fin_trait p{
+  position:absolute;
+  margin:-14px 0 0 840px;}  
+  
+  
+  
   
 /* -------------------------------- */
 /*         WEG MOBILE         */
