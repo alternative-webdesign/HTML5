@@ -125,7 +125,7 @@ section.menu header h1 a:hover{
 header nav.navigation {padding-right:90px;}
   
 header nav.navigation li{
-padding-top:10px;
+padding:0 7px;
   font-size: 1.6em;
   float:right;
   list-style-type:none;
@@ -133,7 +133,6 @@ padding-top:10px;
   
 header nav.navigation a {
   font-size:0.8em;
-  padding:0 8px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
@@ -143,7 +142,7 @@ header nav.navigation a:hover, header nav.navigation a:focus {
   text-decoration: none;
   color:rgba(102,153,0,1);
   text-shadow:0 0 5px #111;
-  border-bottom:25px dashed rgba(102,153,0,1);}
+  border-bottom:20px solid rgba(102,153,0,1);}
 
 
 /* ------------------------------ */
@@ -201,33 +200,14 @@ section.slideshow h1{
   font: 3em "super_police_rg";
   letter-spacing:7px;}
 
-nav.cadre_competences ul{list-style-type:none;}
+nav.cadres ul{list-style-type:none;}
   
-.up{
-	position:relative;
-	height:200px;
-	margin-top:20px;}
+section.slideshow nav.cadres img{width:220px;}
+section.slideshow nav.cadres ul{position:relative;border:1px solid green; height:200px;}
+section.slideshow nav.cadres li{display:inline-block;}
+section.slideshow nav.cadres li a{display:inline}
+  
 
-.conteneur{
-	height: 220px;
-	position: absolute;}
-  
-a.expansion { 
-	position: absolute;
-	display: block;}
-	
-.expansion img {
-  width: 100%;}
-  
-a.expansion span {
-  position:absolute;
-  display:inline;
-  text-align:center;
-  min-width:180px;
-  max-width:200px;
-  top:30px;
-  font:normal 2em "super_police_rg";
-  letter-spacing:2px;}
   
   
 /* ------------------------------ */
