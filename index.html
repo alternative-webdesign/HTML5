@@ -14,13 +14,13 @@
  
     
 	  <link rel="stylesheet" media="all" href="css/styles.css" /> 
-	  <link rel="stylesheet" media="all" href="css/styles_reseaux_sociaux.css" /> 
+	  <link rel="stylesheet" media="all" href="css/style_menu_deroulant.css" /> 
  
     <!--[if IE]>
       <link rel="stylesheet" href="styles-ie.css" />
       <script src="scripts/html5-ie.js"></script>
     <![endif]--> 
-	
+
 </head>
  
 <body> 
@@ -34,32 +34,83 @@
 	<!--[if lte IE 6]> <style type="text/css">img, div { behavior: url(scripts/iepngfix.htc) }	</style> 
 	<![endif]--> 
 
-	<section class="banniere ombre animer">
-		<h1><a>Création site web Charente et France</a></h1>
-			<aside class="reseaux_sociaux">
-				<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Alternative-Webdesign agence web sur Twitter" /><span>Twitter</span></a>
-				<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Alternative-Webdesign agence web sur Facebook" /><span>Facebook</span></a>
-			</aside>
-	</section>
-			
-	<div id="content"><!-- Debut content -->
+		<section class="banniere ombre animer">
+			<div id="realisations"> 
+				<div> 
+					<ul class="liste titre"> 
+						<li>REALISATIONS</li> 
+					</ul> 
 
+					<ul class="liste" style="border-right:1px dashed #EEE"> 
+							<li><a href="#" title="JP.Goudouneix - Artiste Peintre">JP.Goudouneix - Artiste Peintre</a></li> 
+							<li><a href="#" title="01">02</a></li> 
+							<li><a href="#" title="01">03</a></li> 
+							<li><a href="#" title="01">04</a></li> 
+							<li><a href="#" title="01">05</a></li>
+					</ul>  	
+
+					<ul class="liste" style="border-right:1px dashed #EEE"> 
+							<li><a href="#" title="01">01</a></li> 
+							<li><a href="#" title="01">02</a></li> 
+							<li><a href="#" title="01">03</a></li> 
+							<li><a href="#" title="01">04</a></li> 
+							<li><a href="#" title="01">05</a></li>
+					</ul>       
+			</div> 
+		</div> 
+
+		<div id="contact"> 
+			<div> 
+				<ul class="liste" style="border-right:1px dashed #EEE"> 
+						<li><span>Alternative-Webdesign</span></li> 
+						<li>16220 Ecuras | 17000 La Rochelle</li> 
+						<li>Tél. 05 45 .. .. ..</li> 
+						<li><a href="mailto:Contact@alternative-webdesign.fr,contact@alternative-webdesign">Email: Contact@alternative-webdesign.fr</a></li> 
+						<li>05</li>
+				</ul>
+					<div class="pub"><h1>_N'hézitez plus à nous contacter_</h1></div> 
+			</div> 
+		</div> 
+
+		<div id="menu_deroulant"> 
+			<div class="top"> 
+				<div id="menu"> 
+					<span id="roll_A" class="A" alt="Consulter nos Réalisations">Réalisations</span> 
+					<span id="roll_B" class="A" alt="Contact">Contact</span> 
+				</div> 
+			</div> 
+		</div>	
+
+		<div id="bandeau">
+			<div >
+				<h1><a>Création site web Charente et France</a></h1>
+			</div>
+				<aside class="reseaux_sociaux">
+					<a href="#" class="twitter"><img src="images/icon-twitter.png" alt="Alternative-Webdesign agence web sur Twitter" /><span>Twitter</span></a>
+					<a href="#" class="facebook"><img src="images/icon-facebook.png" alt="Alternative-Webdesign agence web sur Facebook" /><span>Facebook</span></a>
+				</aside>
+		</div>
+		</section>
+		
 		<section class="menu">
 			<header role="banner">
-				<h1><img src="images/feuille.png" alt="alternative-webdesign agence web" width="60" /><a href="index.html">Alternative-Webdesign</a></h1>
-				<nav role="navigation">
-					<ul>
-						<li><a href="#">Accueil</a></li>
-						<li><a href="agence.html">L'agence</a></li>
-						<li><a href="#">Réalisations</a></li>
-						<li><a href="#">Les Packs</a></li>
-						<li><a href="#">Devis gratuit</a></li>
-						<li><a href="#">Contact</a></li>
-				<!--	<li><a href="#">Le Blog</a></li>-->
-					</ul>
-				</nav>
-			</header>
+				<h1><a href="index.html">Alternative-Webdesign</a><img src="images/feuille.png" alt="alternative-webdesign agence web" width="60" /></h1>
+					<nav class="navigation">
+						<ul>
+							<li><a href="#">Accueil</a></li>
+							<li><a href="agence.html">L'agence</a></li>
+							<li><a href="#">Réalisations</a></li>
+							<li><a href="#">Les Packs</a></li>
+							<li><a href="#">Devis gratuit</a></li>
+							<li><a href="#">Contact</a></li>
+					<!--	<li><a href="#">Le Blog</a></li>-->
+						</ul>
+					</nav>
+				</header>
 		</section>
+		
+		
+	<div id="content"><!-- Debut content -->
 	
 		<section class="slideshow">
 			<h1>Agence web</h1>
@@ -68,10 +119,11 @@
 					<div class="conteneur">
 						<nav class="cadre_competences">
 							<ul>
-								<li><a class="expansion" href="#"><span>Site vitrine. <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><img src="images/cadre.jpg" alt="Site vitrine" /></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
-								<li><a class="expansion" href="#"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> <img src="images/cadre.jpg" alt="Compétences" /></a></li>
+								<li><a class="expansion" href="#"><span>Pack vitrine</span><img src="images/cadre.png" alt="Pack vitrine" /></a></li>
+								<li><a class="expansion" href="#"><span>Pack e-commerce</span><img src="images/cadre.png" alt="Pack e-commerce" /></a></li>
+								<li><a class="expansion" href="#"><span>Pack catalogue</span><img src="images/cadre.png" alt="Pack catalogue" /></a></li>
+								<li><a class="expansion" href="#"><span>Pack sur-mesure</span><img src="images/cadre.png" alt="Pack sur-mesure" /></a></li>
+								<li><a class="expansion" href="#"><span>Pack du moment</span><img src="images/cadre.png" alt="Pack du moment" /></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -79,41 +131,59 @@
 		</section>
 
 		<section class="presentation">
-			<div id="fin_trait">
-				<p>Quelques mots sur l'agence</p>
+			<div id="trait">
+				<h1>Les infos +</h1>
 			</div>
-			<div style="width:800px">
-				<p>
-					Née en 2010, de la passion jumelée de 2 associés, Alternative-Webdesign est une jeune agence web dynamique et structurée. Le sérieux et la motivation de cette équipe qualifiée permettent des réalisations à la fois esthétiques, fidèles,fiables et conformes aux stantards du web (W3C).
-					Parce que 'votre reussite est la notre', nous serons toujours là à vos cotés afin de vous conseillez et vous accompagnez tout au long de vos projets WEB.
-					Nos domaines de compétences s'etendent aussi bien sur l'identité visuelle, web design, que le développement de site e-commerce, site vitrine, site sur-mesure,etc...
-					Notre équipe répondra présente non via une bonne cafetiere de café ou d'une bonne siéte mais grace à sa créativité, sa qualification et son enthousiame a concevoir vos projets.
-				</p>
+			
+			<div id="colonne_1">
+				<h1>Site du moment</h1>
+					<p>
+						consectetur adipiscing elit. Vestibulum cursus lacus lobortis turpis tempor nec tincidunt turpis porta. Nam laoreet tellus semper mauris adipiscing tempus. Praesent auctor porttitor quam, ut aliquam ipsum mollis tristique. 
+					</p>
+			</div>
+			
+			<div id="colonne_2">
+				<h1>Lorem ipsum</h1>
+					<p>
+						consectetur adipiscing elit. Vestibulum cursus lacus lobortis turpis tempor nec tincidunt turpis porta. Nam laoreet tellus semper mauris adipiscing tempus. Praesent auctor porttitor quam, ut aliquam ipsum mollis tristique. 
+					</p>
+			</div>		
+			
+			<div id="colonne_3">
+				<h1>Nous contacter</h1>
+					<div id="adresse">
+						<ul>
+							<li><span>Agence Alternative-Webdesign</span></li>
+							<li>16220 Ecuras // 17000 La Rochelle</li>
+							<li>Tél: 0545 .. .. ..</li>
+							<li>Email: <a href="#">Contact@alternative-webdesign.fr</a></li>
+						</ul>
+				</div>
 			</div>
 		</section>
 			
-		
 	</div><!-- Fin content -->
 
+	<footer>
+		<!--<p>&copy; 2011 Alternative-Webdesign &middot; <a href="#"></a></p>-->
 	
-	
-	<footer></footer>
-	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	</footer>
+	<script type="text/javascript" src="scripts/mootools.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
+	<script type="text/javascript" src="scripts/down.js"></script> 
 	<script type="text/javascript" src="scripts/interface.js"></script> 
-	<script type="text/javascript"> 
-		$(document).ready(
-				function()
-				{
-					$('#up').Fisheye(
-						{
-							maxWidth: 50,
-							items: 'a',
-							container: '.conteneur',
-							itemWidth: 200,
-							proximity: 90,
-							halign : 'center'
-						})});
+	<script type="text/javascript">
+		var J = jQuery.noConflict();
+			J(document).ready(function(){
+					J('#up').Fisheye({
+						maxWidth: 40,
+						items: 'a',
+						container: '.conteneur',
+						itemWidth: 200,
+						proximity: 90,
+						halign : 'center'
+					})});
 	</script> 
+
 	</body>
 </html>

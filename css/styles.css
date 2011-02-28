@@ -7,7 +7,22 @@ article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, s
 /* ----------------------------- */
 /*     STYLES DE BASE     */
 /* ---------------------------- */
-@font-face {font-family: 'police-h1';src: url('http://www.alternative-webdesign.fr/ressources/steelfish-webfont.eot?') format('eot'),url('http://www.alternative-webdesign.fr/ressources/steelfish-webfont.woff') format('woff'),url('http://www.alternative-webdesign.fr/ressources/steelfish-webfont.ttf') format('truetype'),url('http://www.alternative-webdesign.fr/ressources/steelfish-webfont.svg#webfontNyVDRJjQ') format('svg');}
+@font-face {
+    font-family: 'super_police_bold';
+	  src: url('/fonts/steelfish_bd-webfont.eot'),
+			 url('../fonts/steelfish_bd-webfont.woff') format('woff'),
+			 url('../fonts/steelfish_bd-webfont.ttf') format('truetype'),
+			 url('../fonts/steelfish_bd-webfont.svg');
+			   font-weight: normal;}
+
+@font-face {
+    font-family: 'super_police_rg';
+	  src: url('/fonts/steelfish_rg-webfont.eot'),	
+			 url('../fonts/steelfish_rg-webfont.woff') format('woff'),
+			 url('../fonts/steelfish_rg-webfont.ttf') format('truetype'),
+			 url('../fonts/steelfish_rg-webfont.svg');
+			   font-weight: normal;}
+			   
 
 html {font-size: 100%;}
   
@@ -16,16 +31,14 @@ body {
   background-repeat:repeat-x; 
   margin: 0; 
   padding: 0; 
-  font-family: "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif, "police-h1";
+  font-family: "Lucida Grande",Tahoma, "Trebuchet MS", Arial, Helvetica, FreeSans, sans-serif;
   font-size: 0.8em;
   line-height: 1.4;
   background-color:#202021;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  }
-
+  font-smoothing: antialiased;}
   
 /* ------------------------------ */
 /*               LIENS              */
@@ -44,6 +57,7 @@ h1 {
   font-weight: normal;}
   
 h1 a, h1 a:visited {
+  color: white;
   text-decoration: none;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -76,9 +90,9 @@ strong {font-weight: bold;}
 /*             BLOCS               */
 /* ----------------------------- */
 .ombre{
-  -webkit-box-shadow:0 0px 40px -10px #000;
-  -moz-box-shadow:0 0px 40px -10px #000;
-  box-shadow:0 0px 40px -10px #000;}
+  -webkit-box-shadow:0 0px 35px -10px #000;
+  -moz-box-shadow:0 0px 35px -10px #000;
+  box-shadow:0 0px 35px -10px #000;}
 
 .animer{ 
   -webkit-transition: all .5s;
@@ -90,65 +104,74 @@ strong {font-weight: bold;}
   
 
 /* ------------------------------ */
-/*            HEADER             */
+/*          HEADER            */
 /* ----------------------------- */
-header{position: relative;}
+section.menu header{
+  border-bottom:1px solid #888; 
+  height:142px;
+  width:1000px;
+  margin:0 auto;}
 
-header img{
-  position:absolute;
-  margin:10px 0 0 315px}
-
-header h1{
-  margin-top:80px;
+section.menu header h1 {
+background-color:#333;
+position:absolute;
+  margin-top:90px; 
   font-size:2.5em;
-  text-shadow: 0px 0px 5px white;}
+  text-shadow: 0 0 5px white;}
+
+section.menu header h1 a:hover{
+  color:white;}
   
-header nav {
-  position: absolute;
-  right: 0;
-  bottom: 80px;
-  font-size: 1.6em;}
+header nav.navigation {padding-right:90px;}
   
-header nav li {display: inline;}
+header nav.navigation li{
+padding-top:10px;
+  font-size: 1.6em;
+  float:right;
+  list-style-type:none;
+  display:inline-block;}
   
-header nav a {
-  position: relative;
+header nav.navigation a {
   font-size:0.8em;
-  padding: 5px;
+  padding:0 8px;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;}
-
-header nav a:hover, header nav a:focus {
+  
+header nav.navigation a:hover, header nav.navigation a:focus {
   text-decoration: none;
   color:rgba(102,153,0,1);
-  text-shadow:0px 0px 5px #111;
+  text-shadow:0 0 5px #111;
   border-bottom:25px dashed rgba(102,153,0,1);}
 
 
 /* ------------------------------ */
-/*          BANNIERE           */
+/*        BANNIERE         */
 /* ----------------------------- */
 section.banniere{
+  display:block;
+  width:100%;
   height:50px;}
 
-section.banniere h1{
+#bandeau{width:100%;background-color:#202021;}  
+#bandeau div{width:1000px;margin:0 auto;}  
+#bandeau div h1{
+  float:left;
   font-size:1em;
   letter-spacing:2px;
-  margin:15px 0 0 12%;
-  cursor:default;}
+  cursor:default;}  
   
-aside.reseaux_sociaux{display:inline-block;float: right !important;margin-right:100px;}
+aside.reseaux_sociaux{float: right !important;display:inline-block;margin-right:55px;}
 aside.reseaux_sociaux span{display:none;}
-.twitter:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
-.facebook:hover span{position:absolute;display:inline;margin:35px 0 0 -5px;}
+.twitter:hover span{position:absolute;display:inline;margin:18px 0 0 -5px;}
+.facebook:hover span{position:absolute;display:inline;margin:18px 0 0 -5px;}
 aside.reseaux_sociaux:hover a{color:#FFF;text-decoration:none;}
-aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
+aside.reseaux_sociaux:hover a:hover{font-size:0.9em;color:#669900;font-weight:bold;}
   
 .reseaux_sociaux img {
   width:45px;
-  margin-left:30px;
+  margin:-20px 0 0 30px;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;}
@@ -160,7 +183,7 @@ aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
   
   
 /* ------------------------------ */
-/*          CONTENT            */
+/*         CONTENT          */
 /* ----------------------------- */
 #content {
   width:1000px;
@@ -168,15 +191,14 @@ aside.reseaux_sociaux:hover a:hover{color:#669900;font-weight:bold;}
 
   
 /* ------------------------------ */
-/*           SLIDESHOW       */
+/*       SLIDESHOW       */
 /* ----------------------------- */
 section.slideshow{
-  position:relative; 
-  border-top:1px solid #999;
-  margin:-10px 0 65px;}
+  width:100%;
+  clear:both;}
   
 section.slideshow h1{
-  font: 3em "police-h1";
+  font: 3em "super_police_rg";
   letter-spacing:7px;}
 
 nav.cadre_competences ul{list-style-type:none;}
@@ -198,30 +220,58 @@ a.expansion {
   width: 100%;}
   
 a.expansion span {
-position:absolute;
+  position:absolute;
   display:inline;
-text-align:justify;
-top:10px;
-left:10px;
-  font:normal 1em;}
+  text-align:center;
+  min-width:180px;
+  max-width:200px;
+  top:30px;
+  font:normal 2em "super_police_rg";
+  letter-spacing:2px;}
   
   
 /* ------------------------------ */
-/*       PRESENTATION     */
+/*    PRESENTATION   */
 /* ----------------------------- */ 
-section.presentation{width:1000px;}  
+section.presentation{
+  clear:both;
+  width:1000px;
+  margin:70px auto 0}
  
-#fin_trait {
-  width:842px;
-  border-top:1px solid #999;}  
+#trait {
+  width:901px;
+  border-top:1px solid #999;
+  margin-bottom:25px;}  
 
-#fin_trait p{
+#trait h1{
+  color:#999;
+  font:normal 1.4em 'super_police_rg';
+  letter-spacing:4px;
   position:absolute;
-  margin:-14px 0 0 840px;}  
+  margin:-18px 0 0 900px;}  
+
+  
+/* ------------------------------ */
+/*        COLONNES        */
+/* ----------------------------- */   
+#colonne_1{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+#colonne_1 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:0 0 10px 15px;}
+#colonne_1 p{padding-right:15px;text-align:justify;}
+
+
+#colonne_2{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+#colonne_2 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:0 0 10px 15px;}
+#colonne_2 p{padding:0 15px;text-align:justify;}
   
   
-  
-  
+#colonne_3{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+#colonne_3 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:6px 0 10px 15px;}
+#colonne_3 #adresse ul{list-style-type:none;margin:0;padding-left:15px;}
+#colonne_3 #adresse span{color:#669900;font-size:1.2em;letter-spacing:1px;padding:0 0 10px 40px;display:block;}
+#colonne_3 #adresse li{line-height:21px;}
+
+
+
 /* -------------------------------- */
 /*         WEG MOBILE         */
 /* ------------------------------- */
