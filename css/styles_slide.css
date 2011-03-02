@@ -1,0 +1,27 @@
+#projet_cadre { 
+	position:relative;
+	margin-bottom:30px;
+	height:250px; 
+	width:900px; 
+	border:5px  solid #FFF; 
+	background-color:#202021;
+		
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	behavior:url(scripts/border-radius.htc);
+	
+  -webkit-box-shadow:0 0 90px -30px #FFF;
+  -moz-box-shadow:0 0px 35px -10px #000;
+  box-shadow:0 0px 35px -10px #000;}
+
+.control { width:52px; height:52px; position:absolute; cursor:pointer; }
+#gauche_ctrl { top:137px; left:-24px; background-image:url('../images/fleches.png'); background-position:0px 0px; z-index:5; visibility:visible; }
+#droite_ctrl { top:137px; left:870px; background-image:url('../images/fleches.png'); background-position:-52px 0px; z-index:5; visibility:visible; }
+#gauche_ctrl:hover { background-position:0px -52px; }
+#droite_ctrl:hover { background-position:-52px -52px; }
+
+
+#slide_contenu div.slide a img {margin:0 5px; height:250px; width:890px; border:0;}
+
+#projet_titre { z-index:5; position:absolute; right:0; margin-top:-20px; margin-right:-20px; background-image:url('../images/projet_titre_accueil.png'); height:160px; width:160px; }

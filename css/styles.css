@@ -1,11 +1,11 @@
 /* ----------------------------- */
-/*              RESET              */
+/*            RESET             */
 /* ----------------------------- */
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
 
 
 /* ----------------------------- */
-/*     STYLES DE BASE     */
+/*  STYLES DE BASE  */
 /* ---------------------------- */
 @font-face {
     font-family: 'super_police_bold';
@@ -27,7 +27,7 @@ article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, s
 html {font-size: 100%;}
   
 body {
-  background-image:url(../images/bg.png);
+  background-image:url('../images/bg.png');
   background-repeat:repeat-x; 
   margin: 0; 
   padding: 0; 
@@ -41,7 +41,7 @@ body {
   font-smoothing: antialiased;}
   
 /* ------------------------------ */
-/*               LIENS              */
+/*              LIENS             */
 /* ----------------------------- */
 a {color:white; text-decoration: none;} 
 a:link {color: white;} 
@@ -50,7 +50,7 @@ a:focus, a:active {outline: none;}
 a img {border: none;} 
 
 /* ------------------------------ */
-/*          TITRES Hx            */
+/*        TITRES Hx          */
 /* ----------------------------- */
 h1 { 
   display: inline-block;
@@ -73,22 +73,21 @@ h2 {font-size: 1.5em;}
  
 
 /* ------------------------------ */
-/*       PARAGRAPHE       */
-/* ----------------------------- */
+/*    PARAGRAPHE     */
+/* ---------------------------- */
 p {margin: .75em 0;} 
  
  
 /* ------------------------------ */
-/*     ~ TYPE EN-LIGNE     */
-/* ----------------------------- */
+/*  ~ TYPE EN-LIGNE  */
+/* ---------------------------- */
 figure{display: inline-block; vertical-align: top;}
 strong {font-weight: bold;}
-.espace{ letter-spacing: 4px;}
   
   
 /* ------------------------------ */
-/*             BLOCS               */
-/* ----------------------------- */
+/*           BLOCS              */
+/* ---------------------------- */
 .ombre{
   -webkit-box-shadow:0 0px 35px -10px #000;
   -moz-box-shadow:0 0px 35px -10px #000;
@@ -104,32 +103,33 @@ strong {font-weight: bold;}
   
 
 /* ------------------------------ */
-/*          HEADER            */
-/* ----------------------------- */
+/*         HEADER            */
+/* ---------------------------- */
 section.menu header{
   border-bottom:1px solid #888; 
-  height:142px;
+  height:123px;
   width:1000px;
   margin:0 auto;}
 
 section.menu header h1 {
-background-color:#333;
-position:absolute;
-  margin-top:90px; 
+  position:absolute;
+  margin-top:70px; 
   font-size:2.5em;
   text-shadow: 0 0 5px white;}
 
 section.menu header h1 a:hover{
   color:white;}
   
-header nav.navigation {padding-right:90px;}
+header nav.navigation ul{
+  display:block;
+  text-align:right;
+  margin-top:30px;}
   
 header nav.navigation li{
-padding:0 7px;
+  display:inline;
+  padding:0 8px;
   font-size: 1.6em;
-  float:right;
-  list-style-type:none;
-  display:inline-block;}
+  list-style-type:none;}
   
 header nav.navigation a {
   font-size:0.8em;
@@ -147,30 +147,29 @@ header nav.navigation a:hover, header nav.navigation a:focus {
 
 /* ------------------------------ */
 /*        BANNIERE         */
-/* ----------------------------- */
+/* ---------------------------- */
 section.banniere{
-  display:block;
-  width:100%;
+width:96%;
+  margin:0 auto;
   height:50px;}
 
-#bandeau{width:100%;background-color:#202021;}  
+#bandeau{width:100%;}  
 #bandeau div{width:1000px;margin:0 auto;}  
 #bandeau div h1{
-  float:left;
+  padding-top:10px;
   font-size:1em;
   letter-spacing:2px;
   cursor:default;}  
   
-aside.reseaux_sociaux{float: right !important;display:inline-block;margin-right:55px;}
+aside.reseaux_sociaux{float: right !important; margin:-42px 70px 0 0;}
 aside.reseaux_sociaux span{display:none;}
-.twitter:hover span{position:absolute;display:inline;margin:18px 0 0 -5px;}
-.facebook:hover span{position:absolute;display:inline;margin:18px 0 0 -5px;}
+.twitter:hover span{position:absolute;display:inline;margin-top:34px;}
+.facebook:hover span{position:absolute;display:inline;margin-top:34px;}
 aside.reseaux_sociaux:hover a{color:#FFF;text-decoration:none;}
 aside.reseaux_sociaux:hover a:hover{font-size:0.9em;color:#669900;font-weight:bold;}
-  
-.reseaux_sociaux img {
+aside.reseaux_sociaux img {
+  margin-left:40px;
   width:45px;
-  margin:-20px 0 0 30px;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;}
@@ -183,15 +182,15 @@ aside.reseaux_sociaux:hover a:hover{font-size:0.9em;color:#669900;font-weight:bo
   
 /* ------------------------------ */
 /*         CONTENT          */
-/* ----------------------------- */
-#content {
+/* ---------------------------- */
+#content {border-right:1px solid green; 
   width:1000px;
   margin: 0 auto;}
 
   
 /* ------------------------------ */
 /*       SLIDESHOW       */
-/* ----------------------------- */
+/* ---------------------------- */
 section.slideshow{
   width:100%;
   clear:both;}
@@ -200,26 +199,17 @@ section.slideshow h1{
   font: 3em "super_police_rg";
   letter-spacing:7px;}
 
-nav.cadres ul{list-style-type:none;}
   
-section.slideshow nav.cadres img{width:220px;}
-section.slideshow nav.cadres ul{position:relative;border:1px solid green; height:200px;}
-section.slideshow nav.cadres li{display:inline-block;}
-section.slideshow nav.cadres li a{display:inline}
-  
-
-  
-  
-/* ------------------------------ */
+/* ------------------------------- */
 /*    PRESENTATION   */
 /* ----------------------------- */ 
 section.presentation{
   clear:both;
   width:1000px;
-  margin:70px auto 0}
+  margin:0 auto}
  
 #trait {
-  width:901px;
+  width:915px;
   border-top:1px solid #999;
   margin-bottom:25px;}  
 
@@ -228,33 +218,46 @@ section.presentation{
   font:normal 1.4em 'super_police_rg';
   letter-spacing:4px;
   position:absolute;
-  margin:-18px 0 0 900px;}  
+  margin:-18px 0 0 912px;}  
 
   
 /* ------------------------------ */
-/*        COLONNES        */
-/* ----------------------------- */   
-#colonne_1{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+/*        COLONNES       */
+/* --------------------------- */   
+#colonne_1{display:inline-block; width:328px; border-right:1px solid #999; height:180px;}
 #colonne_1 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:0 0 10px 15px;}
 #colonne_1 p{padding-right:15px;text-align:justify;}
 
 
-#colonne_2{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+#colonne_2{display:inline-block; width:330px; border-right:1px solid #999; height:180px;}
 #colonne_2 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:0 0 10px 15px;}
 #colonne_2 p{padding:0 15px;text-align:justify;}
   
   
-#colonne_3{display:inline-block; width:329px; border-right:1px solid #999; height:180px;}
+#colonne_3{display:inline-block; width:330px; border-right:1px solid #999; height:180px;}
 #colonne_3 h1{font:normal 2.6em "super_police_bold";letter-spacing:3px;text-decoration:underline;margin:6px 0 10px 15px;}
 #colonne_3 #adresse ul{list-style-type:none;margin:0;padding-left:15px;}
 #colonne_3 #adresse span{color:#669900;font-size:1.2em;letter-spacing:1px;padding:0 0 10px 40px;display:block;}
 #colonne_3 #adresse li{line-height:21px;}
 
 
+/* ------------------------------ */
+/*          FOOTER            */
+/* ---------------------------- */
+footer{
+	position:fixe;
+	margin:120px auto 0;
+	width:1000px;
+	text-align:center;}
+
+footer a, footer a:visited, footer a:link {
+	color: #669900;}
+
+
 
 /* -------------------------------- */
-/*         WEG MOBILE         */
-/* ------------------------------- */
+/*       WEB MOBILE       */
+/* ------------------------------ */
 @media only screen and (max-device-width:480px) {
     html {-webkit-text-size-adjust: 150% !important;}
     body {font-size:1.2em !important;}
