@@ -149,7 +149,7 @@ header nav.navigation a:hover, header nav.navigation a:focus {
 /*        BANNIERE         */
 /* ---------------------------- */
 section.banniere{
-width:96%;
+
   margin:0 auto;
   height:50px;}
 
@@ -258,49 +258,42 @@ footer a, footer a:visited, footer a:link {
 /* -------------------------------- */
 /*       WEB MOBILE       */
 /* ------------------------------ */
-@media only screen and (max-device-width:480px) {
-    html {-webkit-text-size-adjust: 150% !important;}
-    body {font-size:1.2em !important;}
-    h1 span {color:#fff!important;}
-    header nav {position:static!important; font-size:2em!important;}
-    header nav a {padding:10px 20px!important;}
-    #content {height: auto!important;width: auto!important;}
-    #content section {width:auto!important;margin: 70px 0!important;}
-    #content figure {margin:0 10px 10px 0!important; border: 0!important;}}
-
-@media only screen and (max-device-width:640px), only screen and (max-width:640px) {
-	#content, #content section, #content figure, footer {width: auto !important;}
-	
-img,table,td,blockquote,object,embed,video,input,code,pre,textarea {
-	max-width:90% !important}	
-	
-code,pre,textarea {
-	word-wrap:break-word!important;
-	white-space: pre-wrap!important;}
-	
-body {
-		background:none!important;
-		background-color:#000!important;
-		padding: 0 10px;
-		font-size: 80%!important;}
-		
-#content {height: auto!important;}
-		
-#content section {margin-top: 30px!important;}
-		
-#content p#presentation {font-size: 1em!important; margin-bottom:0;}
-#content section h2 {margin:0!important;}
-#content section a {background:none!important;background-color:#000!important;}
-h1 {font-size: 2em!important;}
-h1 span {color:#fff!important;text-shadow:0 0 15px #FFFFFF;}
-header nav {position:static!important; font-size:1.2em!important;}
-header nav a {display:inline-block;padding:10px!important; margin-bottom: 2px!important;}
-#content {height: auto!important;width: auto!important;}
-#content section {width:auto!important;}
-#content figure {margin:0 10px 10px 0!important; border: 0!important; width:130px!important; height:auto!important; -moz-box-shadow:1px 1px 13px #fff;-webkit-box-shadow:1px 1px 13px #fff;}
-#content figure h2 {position: static!important;font-size: 1em!important; margin-left: 4px!important; color: #fff!important}
-#content figure a {color: #fff!important}}
+@media (max-width: 640px) { 
+ 
+ /* passer tous les éléments de largeur fixe en largeur automatique */ 
+ body, element1, element2 { 
+   width: auto !important; 
+   margin: auto !important; 
+   padding: auto !important;  } 
+ 
+ /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */ 
+ img, table, td, blockquote, code, pre, textarea, input, object, embed, video { 
+   max-width: 100% !important;  } 
+ 
+ /* gestion des mots longs */ 
+ textarea, table, td, th, code, pre, samp { 
+   word-wrap: break-word; /* césure forcée */ 
+   white-space: pre-line; /* passage à la ligne spécifique pour les éléments à châsse fixe */  } 
+ 
+ /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */ 
+ element1, element2 { 
+   float: none !important; 
+   width: auto !important } 
+ 
+ /* masquer les éléments superflus */ 
+ .hide_mobile { 
+   display: none !important; } 
+ 
+ /* Un message personnalisé */ 
+ body:before { 
+   content: "Version mobile du site"; 
+   display: block; 
+   color: #777; 
+   text-align: center; 
+   font-style: italic; } 
+} 
 
 @media only screen and (max-device-width:640px) and (orientation:landscape)  {
-body {
-	-webkit-text-size-adjust: 90% !important;}}
+	body {
+	-webkit-text-size-adjust: 70% !important;}
+}
